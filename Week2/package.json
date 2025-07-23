@@ -1,0 +1,23 @@
+{
+  "name": "week2",
+  "version": "1.0.0",
+  "description": "This is a nodejs and express intro workshop",
+  "homepage": "https://github.com/Ashjani/SIT725-2025#readme",
+  "bugs": {
+    "url": "https://github.com/Ashjani/SIT725-2025/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashjani/SIT725-2025.git"
+  },
+  "license": "MIT",
+  "author": "Ash",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
