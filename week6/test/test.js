@@ -33,7 +33,6 @@ describe("Projects API", function () {
         };
         request.post({ url: projectUrl, json: true, body: myNewProject }, function (error, response, body) {
             expect(response.statusCode).to.equal(201);
-            // This line is now correct in your file
             expect(body.message).to.equal("Project successfully added");
             done();
         });
