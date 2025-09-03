@@ -1,17 +1,23 @@
 const cardList = [
     {
-        title: "Kitten 2",
-        image: "3.jpg",
-        link: "About Kitten 2",
-        desciption: "Demo desciption about kitten 2"
+        title: "Cat 1",
+        image: "images/cat-1.jpg",
+        link: "About Cat 1",
+        desciption: "This is a description for Cat 1"
     },
     {
-        title: "Kitten 3",
-        image: "3.jpg",
-        link: "About Kitten 3",
-        desciption: "Demo desciption about kitten 3"
+        title: "Cat 2",
+        image: "images/cat-2.jpg",
+        link: "About Cat 2",
+        desciption: "This is a description for Cat 2"
+    },
+    {
+        title: "Cat 3",
+        image: "images/cat-3.jpg",
+        link: "About Cat 3",
+        desciption: "This is a description for Cat 3"
     }
-]
+];
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
@@ -41,19 +47,12 @@ $(document).ready(function () {
     $('#formSubmit').click(() => {
         submitForm();
     })
-    getProjects();
     $('.modal').modal();
 });
 
 addCards(cardList);
 $('.modal').modal();
-const getProjects = () => {
-    $.get('/api/projects', (response) => {
-        if (response.statusCode == 200) {
-            addCards(response.data);
-        }
-    })
-}
+
 
 
 // this part is for socket.io
